@@ -1,0 +1,18 @@
+{
+    "cameras": [{
+        "id": "test_camera_0",
+        "name": "Test Camera 0",
+        "device-number": 0,
+        "resolution": 1080
+    }, {
+        "id": "test_camera_1",
+        "name": "Test Camera 1",
+        "device-number": 0,
+        "resolution": 720
+    }, {
+        "id": "test_camera_2",
+        "name": "Test Camera 2",
+        "device-number": 0,
+        "resolution": 480
+    }]
+}

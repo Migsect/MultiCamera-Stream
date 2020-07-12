@@ -1,0 +1,74 @@
+html,
+body {
+    background-color: rgb(40, 40, 40);
+    padding: 0px;
+    margin: 0px;
+}
+
+.cameras {
+    display: flex;
+    flex-direction: column;
+    height: 100%
+}
+
+.main-view {
+    flex: 1 1 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.select-view .main-view {
+    flex: 1 1 auto;
+}
+
+.select-view {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.select-view .video-feed.selected {
+    border: solid 4px rgb(63, 63, 255);
+}
+
+.video-feed {
+    position: relative;
+}
+
+.video-feed {
+    min-width: 833px;
+    min-height: 480px;
+    background-color: black;
+}
+
+.video-feed.thumbnail {
+    min-width: 213px;
+    min-height: 120px;
+    background-color: black;
+}
+
+.select-view .video-feed:hover {
+    background-color: rgba(180, 180, 255, 1.0);
+}
+
+.select-view .video-feed:focus {
+    background-color: rgba(127, 127, 255, 1.0);
+}
+
+.select-view .video-feed img:hover {
+    opacity: .5;
+}
+
+.video-feed .camera-name {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2px;
+}

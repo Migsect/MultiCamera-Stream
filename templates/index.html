@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <title>Video Streaming</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script>
+        const VIDEO_FEED_BASE = "{{ url_for('video_feed') }}";
+    </script>
+</head>
+
+<body>
+    <div class="cameras">
+        <div class="main-view">
+        </div>
+        <div class="select-view">
+            {% for camera in cameras %}
+            <div class="video-feed thumbnail" data-camera="{{ camera['id'] }}" title="{{ camera['name'] }}">
+                <img src="{{ url_for('video_feed') + '?thumbnail=1&camera=' + camera['id']}}">
+                <div class=camera-name>{{ camera['name'] }}</div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>
